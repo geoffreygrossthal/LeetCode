@@ -4,7 +4,6 @@
 
 /*
 You are climbing a staircase. It takes n steps to reach the top.
-
 Each time you can either climb 1 or 2 steps. In how many distinct ways can you climb to the top?
 
 Example 1:
@@ -24,13 +23,6 @@ Explanation: There are three ways to climb to the top.
 */
 
 public class ClimbingStairs {
-
-
-    //If odd number must have odd number of 1s
-    //If even number must have even number of 1s
-    //Do not have to check cases that will exceed the number stairs
-    //If odd number must have odd number of 1s
-    //If even number must have even number of 1s
 
     public static void main(String[] args) {
         int result = climbStairs(10);

@@ -83,7 +83,6 @@ public class PalindromeLinkedList {
         if (head == null || head.next == null)
             return true;
 
-        
         //Array to store numbers with max size 10^5 = 100000
         int[] numbers = new int[100000];
 
