@@ -86,4 +86,20 @@ public class RangeSumOfBST {
 
         return sum;
     }
+
+    //Valid solution, trying to find faster solution, beat around 50%
+    public int rangeSumBSTSlower(TreeNode root, int low, int high) {
+        
+        int sum = 0;
+
+        if (root == null)
+            return sum;
+
+        if (low <= root.val && root.val <= high)
+            sum += root.val;
+
+        sum += rangeSumBST(root.left, low, high);
+        sum += rangeSumBST(root.right, low, high);
+        return sum;
+    }
 }
