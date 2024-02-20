@@ -44,7 +44,7 @@ public class RangeSumOfBST {
     }
 
     //Faster solution beat 100%, does not explore unesscesary branches
-    private int rangeSumBST(TreeNode root, int low, int high) {
+    public int rangeSumBST(TreeNode root, int low, int high) {
 
         int sum = 0;
 
@@ -52,7 +52,7 @@ public class RangeSumOfBST {
         if (root == null)
             return sum;
 
-        //Within range at value to sum
+        //Within range add value to sum
         if (low <= root.val && root.val <= high)
             sum += root.val;
 
