@@ -25,7 +25,6 @@ Input: s = "(]"
 Output: false
 
 Constraints:
-
 1 <= s.length <= 104
 s consists of parentheses only '()[]{}'.
 */
@@ -44,7 +43,7 @@ public class ValidParentheses {
         Stack<Character> charStack = new Stack<>();
 
         //Iterate through string
-        for (int i = 0; i < s.length(); i++) {
+        for (int i = 0; i < s.length(); ++i) {
             c = s.charAt(i);
             //Push on stack
             if (c == '[' || c == '{' || c == '(') 
