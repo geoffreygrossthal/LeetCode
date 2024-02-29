@@ -19,6 +19,12 @@ Output: 1
 Example 3:
 Input: nums = [1,3,5,6], target = 7
 Output: 4
+
+Constraints:
+1 <= nums.length <= 104
+-104 <= nums[i] <= 104
+nums contains distinct values sorted in ascending order.
+-104 <= target <= 104
 */
 
 public class SearchInsertPosition {
