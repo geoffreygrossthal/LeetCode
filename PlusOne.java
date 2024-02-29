@@ -61,7 +61,7 @@ public class PlusOne {
             }
         }
 
-        //Base case all 9s return new arrray with one size larger
+        //All 9s, return new arrray with one size larger
         int[] increased_digits = new int[digits.length+1];
         increased_digits[0] = 1;
         return increased_digits;
