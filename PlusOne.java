@@ -41,7 +41,7 @@ public class PlusOne {
 
     public int[] plusOne(int[] digits) {
 
-        //No need to shift, return digits with last value incremented
+        //No need to check other digits, return digits with last value incremented
         if (digits[digits.length-1] != 9) {
             ++digits[digits.length-1];
             return digits;
@@ -50,7 +50,7 @@ public class PlusOne {
         //Iterate through array from left to right, to find increment value
         for (int i = digits.length-1; i >= 0; --i) {
 
-            //9 encountered, need to go to next place over
+            //9 encountered, need to go to next digit left
             if (digits[i] == 9) {
                 digits[i] = 0;
             }
