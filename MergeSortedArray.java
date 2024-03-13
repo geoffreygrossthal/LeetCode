@@ -79,7 +79,7 @@ public class MergeSortedArray {
                     priorityQueue.add(nums1[i]);
                     nums1[i] = nums2[i];
                 }
-                //Priorty queue has the lowest merge it, and insert num1[i]/num[i] into queue
+                //Priorty queue has the lowest, merge it, and insert num1[i]/num2[i] into queue
                 else {
                     priorityQueue.add(nums1[i]);
                     nums1[i] = priorityQueue.poll();
