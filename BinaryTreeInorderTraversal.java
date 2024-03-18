@@ -1,6 +1,6 @@
 //Date: 3/18/2024
 //Programmer: Geoffrey Grossthal
-//Program: Leetcode problem Inorder Traversal
+//Program: Leetcode problem Binary Tree Inorder Traversal
 
 /*
 Given the root of a binary tree, return the inorder traversal of its nodes' values.
