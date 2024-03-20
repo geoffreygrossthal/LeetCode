@@ -45,7 +45,7 @@ public class MaximumDepthBinaryTree {
         //End of a path return depth
         if (root == null)
             return currentDepth;
-        //FInd left and right depths
+        //Find left and right depths
         int leftDepth = maxDepthRecursive(root.left, currentDepth + 1);
         int rightDepth = maxDepthRecursive(root.right, currentDepth + 1);
         //Return the max
