@@ -35,6 +35,8 @@ public class BestTimeToBuyAndSellStock {
         System.out.println(maxProfit(array));
     }
     
+    //My first attempt to the problem first by finding maxes and their respective ranges
+    //then calculating the best difference within those ranges
     public static int maxProfit(int[] prices) {
 
         //Max price available
@@ -85,5 +87,20 @@ public class BestTimeToBuyAndSellStock {
 
         //Profit was negative return 0
         return 0;
+    }
+
+    //Fast algorithm using only one iteration
+    public int maxProfitFaster(int[] prices) {
+        int buy = prices[0];
+        int profit = 0;
+        for (int i = 1; i < prices.length; ++i) {
+            //Cheaper price found to buy
+            if (prices[i] < buy)
+                buy = prices[i];
+            //If difference is better change profits 
+            else if (prices[i] - buy > profit)
+                profit = prices[i] - buy;
+        }
+        return profit;
     }
 }
