@@ -46,11 +46,11 @@ public class ValidPalindrome {
     
             //Skip non-alphanumeric characters
             if (!Character.isLetterOrDigit(left_char)) {
-                left_index++;
+                ++left_index;
                 continue;
             }
             if (!Character.isLetterOrDigit(right_char)) {
-                right_index--;
+                --right_index;
                 continue;
             }
     
@@ -63,8 +63,8 @@ public class ValidPalindrome {
                 return false;
     
             //Left increments, and right decrements
-            left_index++;
-            right_index--;
+            ++left_index;
+            --right_index;
         }
         // All corresponding elements matched, return true
         return true;
