@@ -50,19 +50,41 @@ public class LinkedListCycle {
     //Time complexity of O(n) and a space complexity of O(1)
     public boolean hasCycle(ListNode head) {
             
-        //If empty or only contains one node, it can not contain cycle
+        //If empty, or next is null there is no cycle
         if (head == null || head.next == null)
             return false;
 
         ListNode fast = head.next;
 
+        //If head and fast references meet, cycle is present
         while (head != fast) {
+            //Reached the end of the list, no cycle
             if (fast == null || fast.next == null)
                 return false;
             head = head.next;
             fast = fast.next.next;
         }
 
+        //Loop terminated cycle was present
         return true;
+    }
+
+    //Faster implemenation that does not let the slow node pass the faster
+    public boolean hasCycleFaster(ListNode head) {
+
+        if (head == null || head.next == null)
+            return false;
+    
+        ListNode hare = head.next; 
+        
+        while (hare != null && hare.next != null) {
+            if (head == hare)
+                return true;
+            
+            head = head.next;
+            hare = hare.next.next; 
+        }
+        
+        return false;
     }
 }
