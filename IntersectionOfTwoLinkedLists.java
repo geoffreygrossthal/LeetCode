@@ -89,11 +89,11 @@ public class IntersectionOfTwoLinkedLists {
         //Move the reference of the longer list forward by the difference in lengths
         while (lengthA > lengthB) {
             headA = headA.next;
-            lengthA--;
+            --lengthA;
         }
         while (lengthB > lengthA) {
             headB = headB.next;
-            lengthB--;
+            --lengthB;
         }
         
         //Traverse both lists simultaneously until intersection point is found
@@ -111,7 +111,7 @@ public class IntersectionOfTwoLinkedLists {
         int length = 0;
         //Iterate until the end
         while (head != null) {
-            length++;
+            ++length;
             head = head.next;
         }
         return length;
