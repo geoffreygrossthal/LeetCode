@@ -53,7 +53,7 @@ public class ExcelSheetColumnTitle {
             //Calculate the remainder when columnNumber is divided by 26
             int temp = columnNumber % 26;
             //If the remainder is greater than 0, append the corresponding letter to the StringBuilder
-            if (temp > 0){
+            if (temp > 0) {
                 sb.append(alphabet.charAt(temp - 1));
                 //Update columnNumber for the next iteration by integer division by 26
                 columnNumber /= 26;
