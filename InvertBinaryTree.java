@@ -25,7 +25,6 @@ The number of nodes in the tree is in the range [0, 100].
 
 public class InvertBinaryTree {
 
-
     //Method will invert a binary tree given the root
     public TreeNode invertTree(TreeNode root) {
         return recursiveInvertTree(root);
