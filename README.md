@@ -1,2 +1,2 @@
 # LeetCode
-Java approaches to LeetCode
+Java/PostgreSQL approaches to LeetCode
