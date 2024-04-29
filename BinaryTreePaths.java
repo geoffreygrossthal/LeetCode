@@ -24,6 +24,7 @@ import java.util.List;
 
 public class BinaryTreePaths {
     
+    //Returns a list with a string of all paths in a binary tree
     public List<String> binaryTreePaths(TreeNode root) {
         List<String> paths = new ArrayList<>();
         binaryTreePathsRecursive(root, paths, "");
