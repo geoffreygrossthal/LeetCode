@@ -27,7 +27,7 @@ public class SumOfLeftLeaves {
         return sumOfLeftLeavesRec(root, false);
     }
 
-    //Helper function to recurse through trees and return the sum of left leaces
+    //Helper function to recurse through trees and return the sum of left leaves
     private int sumOfLeftLeavesRec(TreeNode currentNode, boolean left) {
         //Total of left leafs
         int total = 0;
