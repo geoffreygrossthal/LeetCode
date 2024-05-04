@@ -38,10 +38,7 @@ public class FindModeInBinarySearchTree {
         //Traverse the tree and add the mdoes to an array list
         List<Integer> modes_list = new ArrayList<>();
         //[0] is current value, [1] is max count, [2] is current count
-        int[] values = new int[3];
-        values[0] = 0;
-        values[0] = 0;
-        values[0] = 0;
+        int[] values = {0,0,0};
         findMode(root, values, modes_list);
 
         //Add values to array to return
