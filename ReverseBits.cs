@@ -1,6 +1,6 @@
-//Date: 7/10/2024
+//Date: 7/11/2024
 //Programmer: Geoffrey Grossthal
-//Program: Leetcode problem Add Digits
+//Program: Leetcode problem Reverse Bits
 
 /*
 Reverse bits of a given 32 bits unsigned integer.
@@ -33,7 +33,7 @@ Follow up: If this function is called many times, how would you optimize it?
 public class ReverseBits {
 
     //Method to reverse the bits of an unsigned integer
-    public uint ReverseBits(uint n) {
+    public uint reverseBits(uint n) {
         uint reversed = 0;
         int bitsCount = 32;
         for (int i = 0; i < bitsCount; i++) {
