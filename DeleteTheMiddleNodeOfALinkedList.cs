@@ -46,7 +46,7 @@ public class DeleteTheMiddleNodeOfALinkedList {
             return null;
 
         int size = 0;
-        //Max possible nodes is 10^5 (100000), implementation requires O(N) space but does not involve backtracing
+        //Max possible nodes is 10^5 (100000), implementation requires O(1) space for array but does not involve backtracing
         ListNode[] array = new ListNode[100000];
         ListNode current = head;
 
